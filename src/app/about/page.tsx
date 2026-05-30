@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { DiMongodb, DiNginx, DiNpm, DiPostgresql, DiVim } from "react-icons/di";
 import {
   FaAws,
@@ -237,10 +238,12 @@ function Page() {
           >
             <div className="flex flex-row lg:flex-col items-center">
               <div className="flex justify-center items-center lg:w-full lg:aspect-square bg-zinc-800 rounded-xl lg:mb-5">
-                <img
+                <Image
                   className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] aspect-square  bg-zinc-800"
                   alt="me"
                   src="/assets/me.jpg"
+                  width={200}
+                  height={200}
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
@@ -280,13 +283,13 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I'm Jeel Modiya, a passionate developer building innovative web applications 
+              Hey there! I am Jeel Modiya, a passionate developer building innovative web applications
               and solutions. Experienced in full-stack development, DevOps, and creating impactful 
               digital experiences. Strong analytical skills, effective communication, and a 
               team-oriented approach to driving process improvements and delivering results.
             </p>
             <p className="mb-10">
-              When I'm not coding, you can find me exploring new technologies, 
+              When I am not coding, you can find me exploring new technologies,
               building side projects, or sipping coffee while brainstorming my next big idea.
             </p>
             <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
